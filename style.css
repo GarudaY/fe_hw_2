@@ -1,0 +1,61 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 200px 600px 200px;
+  grid-template-rows: 200px 400px 200px;
+  grid-template-areas:
+    "side header smallHeader"
+    "side content rightside"
+  "side content rightside";
+  gap: 10px;
+}
+.leftSide {
+  grid-area: side;
+  padding: 50px;
+  background-color: red;
+  gap: 10px;
+}
+.smallHeader {
+  padding: 50px;
+  grid-area: smallHeader;
+  background-color: aqua;
+}
+.rightSide {
+  grid-area: rightside;
+  padding: 50px;
+  background-color: green;
+}
+.header {
+  grid-area: header;
+  padding: 50px;
+  background-color: blue;
+}
+.content {
+  grid-template-columns: 295px 295px;
+  grid-template-rows: 300px 300px;
+  display: grid;
+  grid-area: content;
+  grid-template-areas:
+    "box1 box2"
+    "box3 box4";
+  gap: 10px;
+}
+.container1 {
+  grid-area: box1;
+  padding: 50px;
+  background-color: yellow;
+}
+.container2 {
+  grid-area: box2;
+  padding: 50px;
+  background-color: yellow;
+}
+.container3 {
+  grid-area: box3;
+  padding: 50px;
+  background-color: yellow;
+}
+.container4 {
+  grid-area: box4;
+  padding: 50px;
+  background-color: yellow;
+}
